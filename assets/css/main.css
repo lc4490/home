@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1817,10 +1818,13 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			font-size: 2em;
 		}
 
 		.icon > .label {
-			display: none;
+			display: contents;
+			font-size: 1.5em;
+
 		}
 
 		.icon:before {
@@ -2130,7 +2134,7 @@ input, select, textarea {
 		display: block;
 		font-size: 0.9em;
 		font-weight: 900;
-		margin: 0 0 1em 0;
+		margin: 0 0 em 0;
 	}
 
 	input[type="text"],
@@ -2291,7 +2295,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 4px;
-		border: solid 1px #c9c9c9;
+		/* border: solid 1px #c9c9c9; */
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -3328,4 +3332,216 @@ input, select, textarea {
 				padding: 0 1.25em;
 			}
 
+		}
+
+/* Extra icons CSS */
+
+/* Special */
+
+ul.special {
+	list-style: none;
+	padding-left: 0;
+	cursor: default;
+	position: relative;
+	margin: -2em 0 4em -2em;
+}
+
+	ul.special li {
+		-moz-transition: top .15s ease-in-out;
+		-webkit-transition: top .15s ease-in-out;
+		-ms-transition: top .15s ease-in-out;
+		transition: top .15s ease-in-out;
+		position: relative;
+		display: inline-block;
+		top: 0;
+		padding: 2em 0 0 2em;
+	}
+
+		ul.special li a {
+			display: block;
+			outline: 0;
+		}
+
+			ul.special li a:before {
+				-moz-transition: background-color .2s ease-in-out;
+				-webkit-transition: background-color .2s ease-in-out;
+				-ms-transition: background-color .2s ease-in-out;
+				transition: background-color .2s ease-in-out;
+				display: block;
+				text-align: center;
+				background: #c1cac5;
+				border-radius: 100%;
+				width: 2.25em;
+				height: 2.25em;
+				line-height: 2.175em;
+				font-size: 5em;
+				color: #fff;
+			}
+
+		ul.special li:hover {
+			top: -1em;
+		}
+
+			ul.special li:hover a:before {
+				background: #b9d2ce;
+			}
+
+/* Large */
+
+@media screen and (max-width: 1280px) {
+
+	/* Basic */
+
+		body, input, textarea, select {
+			font-size: 11pt;
+		}
+
+	/* Special */
+
+		ul.special li a:before {
+			font-size: 60px;
+		}
+
+	/* Box */
+
+		.box.highlight h2 {
+			font-size: 2.5em;
+		}
+
+		.box.highlight header > p {
+			font-size: 1.25em;
+		}
+
+		.box.post h3 {
+			font-size: 2.5em;
+		}
+
+		.box.post header > p {
+			font-size: 1.25em;
+		}
+
+	/* Header */
+
+		#header {
+			font-size: 1.5em;
+		}
+
+	/* Banner */
+
+		#banner {
+			padding: 6em 0;
+		}
+
+			#banner .content {
+				padding: 4em 0 3em 0;
+			}
+
+				#banner .content h2 {
+					margin: 0 0 0.65em 0;
+				}
+
+				#banner .content p {
+					margin: 0 0 1em 0;
+				}
+
+	/* Main */
+
+		#main {
+			border-top-width: 20px;
+			border-bottom-width: 10px;
+		}
+
+	/* Footer */
+
+		#footer {
+			padding: 6em 0 6em 0;
+		}
+
+}
+
+/* Box */
+
+.box.highlight {
+	text-align: center;
+}
+
+	.box.highlight h2 {
+		font-size: 3em;
+		margin: 0 0 0.25em 0;
+	}
+
+	.box.highlight header > p {
+		font-size: 1.65em;
+		margin: 0 0 1.5em 0;
+	}
+
+.box.feature {
+	text-align: center;
+}
+
+.box.post header {
+	margin: 0 0 2.5em 0;
+}
+
+.box.post h3 {
+	font-size: 3em;
+	margin: 0 0 0.25em 0;
+}
+
+.box.post header > p {
+	font-size: 1.65em;
+	margin: 0 0 0.5em 0;
+}
+
+.box.post ul.meta {
+	margin: 0 0 0.5em 0;
+}
+
+.box.post-summary h3 {
+	line-height: 1em;
+	margin: 0 0 0.75em 0;
+}
+
+.box.post-summary .meta {
+	margin: 0;
+	line-height: 1em;
+}
+
+.box.page-content header {
+	margin: 0 0 2.5em 0;
+}
+
+.box.page-content h2 {
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+}
+
+.box.page-content header > p {
+	font-size: 1.65em;
+	margin: 0 0 0.5em 0;
+}
+
+.box.page-content ul.meta {
+	margin: 0 0 0.5em 0;
+}
+
+h2 {
+	font-size: 1.65em;
+}
+
+	h2.major {
+		position: relative;
+		border-top: solid 5px #e7eae8;
+		font-size: 1.65em;
+		text-align: center;
+		margin: 0 0 3em 0;
+		top: 0.775em;
+	}
+
+		h2.major span {
+			background: #fff;
+			position: relative;
+			display: inline-block;
+			top: -0.775em;
+			padding: 0 1.25em 0 1.25em;
 		}
