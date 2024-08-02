@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -28,7 +29,7 @@
 							<!-- Nav -->
 								<nav>
 									<ul>
-										<!-- <li><a href="#menu">Menu</a></li> -->
+										<li><a href="#menu">Menu</a></li>
 									</ul>
 								</nav>
 
@@ -39,7 +40,10 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="#wrapper">Home</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="Resume.pdf">Resume</a></li>
 							<!-- <li><a href="generic.html">Ipsum veroeros</a></li>
 							<li><a href="generic.html">Tempus etiam</a></li>
 							<li><a href="generic.html">Consequat dolor</a></li>
@@ -48,14 +52,48 @@
 					</nav>
 
 				<!-- Main -->
+					
 					<div id="main">
 						<div class="inner">
-							<header>
+							<!-- intro page -->
+							<article id="top" class="wrapper style1">
+								<div class="container">
+									<div class="row">
+										<div class="col-4 col-5-large col-12-medium">
+											<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+										</div>
+										<div class="col-8 col-7-large col-12-medium">
+											<header>
+												<h1>Hi. I'm <strong>Leo Chao</strong>.</h1>
+											</header>
+											<p>I am a recent Computer Science and Data Science graduate from NYU, with experience in web development, data analysis, and project management, fluent in multiple programming languages and passionate about leveraging technology to solve real-world problems.</p>
+											<!-- <p>And this is <strong>Miniport</strong>, a free, fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a> &amp; released under the <a href="http://html5up.net/license">CCA license</a>.</p> -->
+											<a href="Resume.pdf" target="_blank" class="button large scrolly">Click to see my Resume</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- <header>
 								<h1>My Name is Leo Chao<br /> </h1>
-								<!-- template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1> -->
 								<p>I am a recent Computer Science and Data Science graduate from NYU, with experience in web development, data analysis, and project management, fluent in multiple programming languages and passionate about leveraging technology to solve real-world problems.<br \> Learn more about me <a href="Resume.pdf" target="_blank">here.</a></p>
-							</header>
+							</header> -->
+							<!-- <img src="grad.JPG" alt="Grad photo"> -->
+							<!-- anchor link -->
+							 <!-- projects section -->
+							<h2 id="projects"></h2>
+							<h2 class="major"><span>Projects</span></h2>
 							<section class="tiles">
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic07.jpg" alt="" />
+									</span>
+									<a href = "https://my-pantry-leo-chaos-projects.vercel.app" target="_blank">
+										<h2>myPantry</h2>
+										<div class="content">
+											<p>NextJS App that tracks pantry ingredients. Utilizes react-camera-pro and OpenAI API to identify images. Real-time creation of recipes using AI.</p>
+										</div>
+									</a>
+								</article>
 								<article class="style1">
 									<span class="image">
 										<img src="images/pic04.jpg" alt="" />
@@ -126,6 +164,30 @@
 							</section>
 						</div>
 					</div>
+					<div id="main">
+						<div class="inner">
+						<!-- anchor link -->
+						<h2 id="skills"></h2>
+						<h2 class="major"><span>Skills</span></h2>
+						<section class="box highlight">
+							<ul class="special">
+								<li><a class="icon solid brands fa-python"><span class="label">Python</span></a></li>
+								<li><a class="icon solid brands fa-java"><span class="label">Java</span></a></li>
+								<li><a class="icon solid brands fa-c"><span class="label">C</span></a></li>
+								<li><a class="icon solid brands fa-html5"><span class="label">HTML</span></a></li>
+								<li><a class="icon solid brands fa-css3"><span class="label">CSS</span></a></li>
+								<li><a class="icon solid brands fa-js"><span class="label">Javascript</span></a></li>
+								<li><a class="icon solid brands fa-node-js"><span class="label">NextJS</span></a></li>
+								<li><a class="icon solid brands fa-react"><span class="label">ReactJS</span></a></li>
+								<li><a class="icon solid fa-fire-flame-curved"><span class="label">Firebase</span></a></li>
+								<li><a class="icon solid fa-brain"><span class="label">OpenAI</span></a></li>
+							</ul>
+							
+						</section>
+					</div>
+					</div>
+
+					
 
 				<!-- Footer -->
 					<footer id="footer">
